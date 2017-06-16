@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/yop"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@color/blue_cop">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/yop"
+        android:background="@color/blue_cop">
+
+        <LinearLayout
+            android:id="@+id/l_left"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/b_left"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/button_nav7"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/head_return"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <com.pengdikj.cops.contacts.ViewPagerIndicator
+            android:id="@+id/indicator"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:background="@color/bg_white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+        </com.pengdikj.cops.contacts.ViewPagerIndicator>
+        <!--<RelativeLayout
+            android:layout_width="202dp"
+            android:layout_height="37dp"
+            android:background="@drawable/by_rounded_white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+        </RelativeLayout>-->
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:background="@color/white">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="请输入您处理的案件名称"
+            android:textSize="14sp"
+            android:padding="15dp"
+            android:gravity="center_vertical"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/bg_shane">
+        </View>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请描述办案的记录"
+            android:textSize="14sp"
+            android:padding="15dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pic_tup"/>
+            <ImageView
+                android:id="@+id/im_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pic_ship"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_fabu"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:text="确认发布"
+            android:textColor="@color/white"
+            android:background="@drawable/by_rounded_green"
+            android:layout_gravity="center_horizontal|bottom"/>
+    </LinearLayout>
+</ScrollView>

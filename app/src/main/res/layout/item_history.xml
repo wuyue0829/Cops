@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imageView9" />
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:text="案件名称：杨鸿儒嫖娼案"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView9" />
+        
+        <Button
+            android:id="@+id/bt_finish"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/by_rounded_green"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="已处理"
+            android:clickable="false"
+            android:layout_alignParentEnd="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_shane"
+            android:layout_alignParentBottom="true">
+        </View>
+    </RelativeLayout>
+
+
+</LinearLayout>

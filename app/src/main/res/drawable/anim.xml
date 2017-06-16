@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/loading_0"
+            android:gravity="left" >
+        </clip>
+    </item>
+    <item android:duration="100" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/loading_1"
+            android:gravity="left" >
+        </clip>
+    </item>
+    <item android:duration="100" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/loading_2"
+            android:gravity="left" >
+        </clip>
+    </item>
+    <item android:duration="100" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/loading_3"
+            android:gravity="left" >
+        </clip>
+    </item>
+    <item android:duration="100" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/loading_4"
+            android:gravity="left" >
+        </clip>
+    </item>
+    <item android:duration="100" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/loading_5"
+            android:gravity="left" >
+        </clip>
+    </item>
+    <item android:duration="100" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/loading_6"
+            android:gravity="left" >
+        </clip>
+    </item>
+    <item android:duration="100" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/loading_7"
+            android:gravity="left" >
+        </clip>
+    </item>
+</animation-list>

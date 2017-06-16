@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请上传您需要报警的照片"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/font_black"/>
+    <RelativeLayout
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="160dp"
+        android:layout_height="77.5dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="77.5dp"
+            android:layout_height="77.5dp">
+
+            <ImageView
+                android:id="@+id/im_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/icon_add"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="77.5dp"
+            android:layout_height="77.5dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/im_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/icon_add"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="160dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="77.5dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="77.5dp"
+            android:layout_height="77.5dp">
+
+            <ImageView
+                android:id="@+id/im_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/icon_add"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="77.5dp"
+            android:layout_height="77.5dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/im_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/icon_add"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

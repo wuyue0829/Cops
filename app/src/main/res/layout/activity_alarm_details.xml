@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/navi_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_go"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:text="警情信息"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:background="@color/blue_cop"
+                android:id="@+id/textView18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接警时间:"
+                android:textColor="@color/text_black"
+                android:id="@+id/textView25"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/textView18"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:text="04:59"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBaseline="@+id/textView25"
+                android:layout_alignBottom="@+id/textView25"
+                android:layout_toEndOf="@+id/textView25"
+                android:id="@+id/tv_toptime" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="警情位置:"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView25"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView26" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西安外事学院北校区"
+                android:maxEms="15"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_alignBaseline="@+id/textView26"
+                android:layout_alignBottom="@+id/textView26"
+                android:layout_alignStart="@+id/tv_toptime"
+                android:id="@+id/tv_topaddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进入导航"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/filter_color_blue"
+                android:layout_below="@+id/tv_topaddress"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_type_now"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:text="未处理"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/font_black"
+        android:paddingLeft="20dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报警时间:"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:id="@+id/textView17" />
+                <TextView
+                    android:id="@+id/tv_jishi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04:59"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/liji_material_red_500"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textView17" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报警内容:"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:id="@+id/textView19" />
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报警人看到杨鸿儒进入红灯区"
+                    android:layout_marginLeft="10dp"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textView19" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报警地址:"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:id="@+id/textView20" />
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="西安外事学院北校区（八戒包子附件）"
+                    android:layout_marginLeft="10dp"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textView20" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报警类型:"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:id="@+id/textView21" />
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刑事案件"
+                    android:layout_marginLeft="10dp"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textView21" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报警人姓名:"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:id="@+id/textView22" />
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="徐向荣"
+                    android:layout_marginLeft="10dp"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textView22" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报警人性别:"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:id="@+id/textView23" />
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:layout_marginLeft="10dp"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textView23" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报警人电话:"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:id="@+id/textView24" />
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18516761618"
+                    android:layout_marginLeft="10dp"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textView24" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ly_liji"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    >
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/by_rounded_red"
+                        android:text="立即处理"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:id="@+id/bt_chuli"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/bt_daoda"
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/by_rounded_green"
+                        android:textSize="14sp"
+                        android:text="确认到达"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/welcomePanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/welcomePager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical"
+            android:background="@color/white"
+            android:clickable="false"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/welcome_left"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/welcome_right"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainPoster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/im_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/first"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/welcomePoster"
+        android:layout_width="match_parent"
+        android:layout_height="1990dp"
+        android:background="#000000"
+        android:scaleType="fitStart"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,9 @@
+<!--
+  ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved.
+  -->
+<resources>
+    <string name="app_name">OCR_UI</string>
+    <string name="camera_permission_required">您需要打开相机权限！</string>
+    <string name="camera_permission_location">您需要打开点位和文件读取权限！</string>
+    <string name="camera_permission_call">您需要打开电话权限！</string>
+</resources>

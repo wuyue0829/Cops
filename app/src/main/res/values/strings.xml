@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">智慧警务</string>
+
+    <string name="startLocation">点击签到</string>
+    <string name="stopLocation">签到下班</string>
+    <string name="app_id">593122d1</string>
+
+    <string name="congestion">避免拥堵</string>
+    <string name="cost">避免收费</string>
+    <string name="avoidhightspeed">不走高速</string>
+    <string name="hightspeed">高速优先</string>
+
+    <string name="filter_none">原图</string>
+    <string name="filter_beauty_skin">美肤</string>
+    <string name="filter_whiten_skin">美白</string>
+    <string name="filter_healthy">健康</string>
+    <string name="filter_romance">浪漫</string>
+    <string name="filter_warm">温暖</string>
+    <string name="filter_antique">复古</string>
+    <string name="filter_nostalgia">怀旧</string>
+    <string name="filter_calm">平静</string>
+    <string name="filter_soft">温柔</string>
+
+    <string name="head_return">返回</string>
+    <string name="head_title">商州智慧警务平台</string>
+</resources>

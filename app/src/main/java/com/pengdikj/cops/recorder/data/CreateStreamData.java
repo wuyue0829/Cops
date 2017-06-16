@@ -1,0 +1,52 @@
+package com.pengdikj.cops.recorder.data;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.preference.PreferenceManager;
+
+public class CreateStreamData {
+	private SharedPreferences sp;
+	private final static String DEFULT = "NoStreamData_";
+	private Editor edt;
+	
+	public CreateStreamData(Context context) {
+		sp = PreferenceManager.getDefaultSharedPreferences(context);
+	}
+	
+	private String domainName;
+	private String appKey;
+	private String streamId;
+
+	public String getDomainName() {
+		domainName = sp.getString(DEFULT + "domainName" , null);
+		return domainName;
+	}
+	public void setDomainName(String domainName) {
+		edt = sp.edit();
+		this.domainName = domainName;
+		edt.putString(DEFULT + "domainName", domainName);
+		edt.apply();
+		
+	}
+	public String getAppKey() {
+		appKey = sp.getString(DEFULT+"appKey", null);
+		return appKey;
+	}
+	public void setAppKey(String appKey) {
+		edt = sp.edit();
+		this.appKey = appKey;
+		edt.putString(DEFULT+"appKey", appKey);
+		edt.apply();
+	}
+	public String getStreamId() {
+		streamId = sp.getString(DEFULT+"streamId", null);
+		return streamId;
+	}
+	public void setStreamId(String streamId) {
+		edt = sp.edit();
+		this.streamId = streamId;
+		edt.putString(DEFULT+"streamId", streamId);
+		edt.apply();
+	}
+}

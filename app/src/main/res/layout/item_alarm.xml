@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:clickable="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="@color/liji_material_red_500"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView8" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="杨鸿儒入室杀人强奸案"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_alignBottom="@+id/textView8"
+                android:layout_toEndOf="@+id/textView8"
+                android:layout_marginStart="11dp"
+                android:id="@+id/tv_title" />
+            
+            
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                android:background="@color/liji_material_red_500"
+                android:layout_alignBottom="@+id/tv_title"
+                android:layout_toEndOf="@+id/tv_title"
+                android:layout_marginStart="9dp"
+                android:text="紧急"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_alignTop="@+id/tv_title"
+                android:id="@+id/tv_type" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地点：西安市高新区高新1路"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginTop="10dp"
+                android:maxEms="12"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_alignStart="@+id/tv_title" />
+            
+            
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/by_rounded_button"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="17dp"
+                android:layout_alignBaseline="@+id/tv_type"
+                android:layout_alignBottom="@+id/tv_type"
+                android:text="查看"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接警计时:04:59:02"
+                android:textSize="12sp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/liji_material_red_500"
+                android:layout_below="@+id/textView15"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
